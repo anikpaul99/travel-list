@@ -64,6 +64,12 @@ function Logo() {
   return <h1>🏝️ FAR AWAY 🧳</h1>;
 }
 
+/**
+ * The form component from where user will add a new item
+ * @prop {Object} onAddItems the function that will update the 'items' state
+ * @returns {JSX.Element}
+ * @author Anik Paul
+ */
 function Form({ onAddItems }) {
   const [description, setDescription] = useState("");
   const [quantity, setQuantity] = useState(1);
@@ -112,6 +118,7 @@ function Form({ onAddItems }) {
  * @prop {Object} onToggleItem the function to mark an item if it is packed
  * @prop {Object} onClearList the function to clear the item list
  * @returns {JSX.Element}
+ * @author Anik Paul
  */
 function PackingList({ items, onDeleteItem, onToggleItem, onClearList }) {
   const [sortBy, setSortBy] = useState("input");
@@ -173,8 +180,9 @@ function Item({ item, onDeleteItem, onToggleItem }) {
 
 /**
  * Will render a statistics (number of items to be packed, number of items that are already packed) as a footer in the UI.
- * @param {Object []} items the items array of objects state recieved as a 'props'
+ * @prop {Object []} items the items state containing all the items
  * @returns {JSX.Element}
+ * @author Anik Paul
  */
 function Stats({ items }) {
   if (!items.length)
