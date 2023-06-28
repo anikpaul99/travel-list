@@ -13,16 +13,6 @@ Install Travel List with npm
 
 ---
 
-## Deployment
-
-To deploy this project run
-
-```bash
-  npm run build
-```
-
----
-
 ## Demo
 
 Go to [**Travel List App Site**](https://travel-list-anik.netlify.app/)
