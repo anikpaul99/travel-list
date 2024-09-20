@@ -1,7 +1,14 @@
 {
   "name": "travel-list",
   "version": "0.1.0",
-  "author": "Anik Paul",
+  "author": {
+    "name": "Anik Paul",
+    "email": "hello@paulanik.com",
+    "url": "https://paulanik.com",
+    "linkedin": "https://www.linkedin.com/in/anik-paul-dev/",
+    "dev.to": "https://dev.to/anikpaul",
+    "github": "https://github.com/anikpaul99"
+  },
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
